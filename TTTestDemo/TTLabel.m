@@ -82,6 +82,8 @@
     NSMutableAttributedString *attStr = [[NSMutableAttributedString alloc] initWithString:self.content];
     [attStr addAttribute:NSLinkAttributeName value:@"click://" range:NSMakeRange(range.location, range.length)];
     self.textView.attributedText = attStr;
+    self.textView.linkTextAttributes = @{NSForegroundColorAttributeName: [UIColor blueColor],
+                                         NSUnderlineStyleAttributeName: [NSNumber numberWithInt:NSUnderlineStyleSingle]};
     
     [self setNeedsUpdateConstraints];
 }
