@@ -80,7 +80,7 @@
     if (!_underLineLabel) {
         _underLineLabel = [[TTLabel alloc] init];
         _underLineLabel.translatesAutoresizingMaskIntoConstraints = NO;
-        _underLineLabel.backgroundColor = [UIColor lightGrayColor];
+        _underLineLabel.backgroundColor = [UIColor clearColor];
         _underLineLabel.hidden = YES;
         TT_WS(ws);
         _underLineLabel.underLineCallback = ^(){
@@ -100,9 +100,9 @@
         _label = [UILabel new];
         _label.translatesAutoresizingMaskIntoConstraints = NO;
         _label.text = self.content;
-        _label.backgroundColor = [UIColor lightGrayColor];
+        _label.backgroundColor = [UIColor clearColor];
         _label.numberOfLines = 0;
-        _label.font = [UIFont systemFontOfSize:15.0];
+        _label.font = [UIFont systemFontOfSize:13.0];
     }
     return _label;
 }
